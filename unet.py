@@ -6,6 +6,9 @@ from collections import OrderedDict
 from torch.nn import init
 import numpy as np
 
+# please note that this is not my code and was taken from https://github.com/jaxony/unet-pytorch/blob/master/model.py
+# the only modification i made was to change the cross entropy loss for binary cross entropy beacuse there is only one class
+
 def conv3x3(in_channels, out_channels, stride=1, padding=1, bias=True, groups=1):    
 	return nn.Conv2d(in_channels, out_channels, kernel_size=3, stride=stride, padding=padding, bias=bias, groups=groups)
 

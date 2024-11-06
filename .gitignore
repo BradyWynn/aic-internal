@@ -1,6 +1,5 @@
 /test
 /train
-/masks
 /models
 cropped_images.npy
 cropped_test_set.npy
